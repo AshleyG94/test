@@ -1,0 +1,4 @@
+FROM yandex/rep:0.6.5
+MAINTAINER George Gilliver <george_gilliver@hotmail.co.uk>
+
+#Remember too add notebook add ons
