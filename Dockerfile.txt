@@ -1,5 +1,4 @@
-FROM yandex/rep:0.6.5
-MAINTAINER George Gilliver <george_gilliver@hotmail.co.uk>
+FROM yandex/rep:0.6.4
 
-#Install notebook addons
-RUN pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip 
+RUN bash -c "source /root/miniconda/envs/rep_py2/bin/thisroot.sh && /root/miniconda/envs/rep_py2/bin/python -m pip install rootpy==0.8.0"
+RUN /root/miniconda/envs/rep_py2/bin/python -m pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip 
