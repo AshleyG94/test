@@ -1,4 +1,5 @@
 FROM yandex/rep:0.6.5
 MAINTAINER George Gilliver <george_gilliver@hotmail.co.uk>
 
-#Remember too add notebook add ons
+#Install notebook addons
+RUN pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip 
